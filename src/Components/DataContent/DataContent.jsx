@@ -1,21 +1,8 @@
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
-const users = [
-    {
-        name: 'Brian',
-        occupation: 'Web Developer',
-    },
-    {
-        name: 'John',
-        occupation: 'Doctor',
-    },
-    {
-        name: 'Mark',
-        occupation: 'Teacher',
-    },
-];
-export default function DataContent() {
+
+export default function DataContent({users}) {
     return (
         <View title='CARD WITH DIVIDER'>
             {users.map((u, i) => {
